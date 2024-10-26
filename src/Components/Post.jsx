@@ -27,7 +27,7 @@ export default function Post() {
           </div>
         </div>
         <div className="p-4">
-          <h3 className="text-2xl font-semibold">{{__html:post.title}}</h3>
+          <h3 className="text-2xl font-semibold" dangerouslySetInnerHTML={{__html:post.title}}></h3>
           {/* <p className="text-gray-600 mt-2">{post.desc}</p> */}
           <p className="mt-4">{post.post}</p>
         </div>
